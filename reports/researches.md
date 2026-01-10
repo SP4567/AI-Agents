@@ -1,0 +1,7 @@
+**Domain & Regulatory Review: AI-Powered Customer Support for SMEs**
+
+**Critical Constraints & Feasibility Concerns:**
+SMEs, characterized by limited IT resources and budget, face significant practical constraints. The actual and perceived complexity of integrating AI platforms with existing CRM/ERP systems is a major barrier; solutions require truly 'no-code' setup and seamless, pre-built integrations. Maintaining the 'human touch' is paramount, demanding empathetic, context-aware human-AI handoffs to prevent customer experience erosion. Feasibility is also tied to transparent, predictable pricing models that clearly demonstrate immediate ROI, as complex or escalating costs are prohibitive. Over-engineering features or requiring specialized AI expertise will significantly deter adoption among "Overwhelmed Founders."
+
+**Compliance Considerations:**
+Data privacy and security are absolute non-negotiables. Platforms must ensure robust infrastructure, adhere strictly to data protection regulations (e.g., GDPR, CCPA for PII handling), and provide transparent privacy policies. Any perceived vulnerability or breach will catastrophically damage trust. Additionally, ethical AI considerations regarding bias, fairness, and transparency in automated interactions are critical. Solutions must also acknowledge and be adaptable to sector-specific regulatory requirements, especially when targeting industries such as healthcare or finance.

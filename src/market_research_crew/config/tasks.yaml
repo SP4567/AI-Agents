@@ -1,0 +1,71 @@
+market_analysis_task:
+  description: >
+    Conduct a comprehensive market analysis for {topic}. Research the overall
+    market size, growth rate, key trends, emerging opportunities, and future
+    outlook. Focus on macro and micro-level insights supported by credible data.
+    Keep findings concise and relevant to ensure the final combined report does
+    not exceed 2000 words.
+  expected_output: >
+    A concise market overview report for {topic} covering market size estimates,
+    growth trends, key drivers, challenges, and future projections, limited to
+    approximately 400 words.
+  agent: market_analyst_agent
+
+customer_research_task:
+  description: >
+    Identify and analyze the target customers for {topic}. Research customer
+    personas, pain points, motivations, behavior patterns, and unmet needs using
+    qualitative sources such as reviews, forums, surveys, and social discussions.
+    Summarize insights clearly to support a final report capped at 2000 words.
+  expected_output: >
+    A customer insights report outlining key personas, primary pain points,
+    behavioral patterns, expectations, and opportunity areas for {topic}, limited
+    to approximately 400 words.
+  agent: customer_research_agent
+
+competitive_intelligence_task:
+  description: >
+    Analyze the competitive landscape for {topic}. Identify major competitors,
+    emerging players, pricing models, product offerings, positioning strategies,
+    strengths, weaknesses, and gaps in the market. Prioritize high-impact insights
+    to maintain a concise final report under 2000 words.
+  expected_output: >
+    A competitive analysis report including competitor profiles, SWOT analysis,
+    pricing comparison, positioning insights, and market gaps for {topic}, limited
+    to approximately 400 words.
+  agent: competitive_intelligence_agent
+
+data_validation_task:
+  description: >
+    Validate and cross-check all collected market, customer, and competitor data
+    related to {topic}. Ensure accuracy, relevance, and credibility while removing
+    redundant or low-value information to support a final report of no more than
+    2000 words.
+  expected_output: >
+    A validation summary highlighting verified data, corrected assumptions,
+    confidence levels, and key limitations for {topic}, limited to approximately
+    300 words.
+  agent: data_validation_research_integrity_agent
+
+insight_synthesis_task:
+  description: >
+    Synthesize insights from all validated research to generate clear,
+    actionable strategic insights for {topic}. Focus on opportunities, risks,
+    and recommendations that matter most, keeping the final combined report
+    within a strict 2000-word limit.
+  expected_output: >
+    A strategic insight and recommendations report summarizing key findings,
+    opportunity areas, risks, and next steps for {topic}, limited to approximately
+    500 words.
+  agent: insight_synthesizer_strategy_agent
+
+domain_expert_review_task:
+  description: >
+    Review synthesized insights for {topic} from a domain and regulatory
+    perspective. Highlight only critical constraints, compliance considerations,
+    and feasibility concerns to preserve clarity and keep the overall report
+    under 2000 words.
+  expected_output: >
+    A domain and regulatory review summary outlining essential considerations,
+    risks, and refinements for {topic}, limited to approximately 200 words.
+  agent: domain_expert_agent
