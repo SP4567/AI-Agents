@@ -1,0 +1,17 @@
+[
+  {
+    "timestamp": "2026-01-12T08:15:12Z",
+    "source": "windows_security",
+    "message": "Successful login for user jdoe from 10.0.0.5"
+  },
+  {
+    "timestamp": "2026-01-12T08:17:45Z",
+    "source": "windows_security",
+    "message": "Process started: powershell.exe -EncodedCommand ..."
+  },
+  {
+    "timestamp": "2026-01-12T08:18:10Z",
+    "source": "windows_security",
+    "message": "Scheduled task created: UpdateCheck"
+  }
+]

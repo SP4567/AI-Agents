@@ -1,0 +1,57 @@
+soc_log_analysis:
+  description: >
+    Analyze provided security logs to identify suspicious or anomalous activity.
+    Focus on authentication events, process execution, network connections,
+    and policy violations. Do not assume malicious intent without evidence.
+  expected_output: >
+    A structured summary of suspicious events including timestamps, affected
+    hosts/users, suspected techniques, and confidence level. Include MITRE
+    ATT&CK mappings where applicable.
+  agent: soc_analyst
+  inputs:
+    - log_sources
+    - timeframe
+    - environment_context
+
+malware_analysis:
+  description: >
+    Perform safe analysis of suspicious files using non-executive techniques.
+    Use hashes, YARA rules, and sandbox reports only. Do not execute files
+    directly or speculate beyond evidence.
+  expected_output: >
+    Malware analysis report including file hashes, YARA matches, sandbox
+    observations, extracted IOCs, suspected malware family (if any),
+    and a risk score with justification.
+  agent: malware_analyst
+  inputs:
+    - sample_path
+    - file_metadata
+    - sandbox_reports
+
+forensic_timeline_analysis:
+  description: >
+    Reconstruct a forensic timeline from provided disk, memory, and log artifacts.
+    Maintain evidence integrity and document assumptions. Identify user actions,
+    process creation, persistence mechanisms, and lateral movement indicators.
+  expected_output: >
+    A chronological timeline of events with inferred relationships, highlighting
+    likely user-driven actions versus automated or malicious activity.
+  agent: forensics_examiner
+  inputs:
+    - disk_artifacts
+    - memory_artifacts
+    - system_logs
+
+incident_correlation_and_decision:
+  description: >
+    Correlate findings from SOC, malware, and forensic analysis to determine
+    incident severity and recommend response actions. No destructive actions
+    are permitted. Escalate to human analysts when confidence or impact is high.
+  expected_output: >
+    Incident summary including scope, impact assessment, severity rating,
+    recommended response steps, and items requiring human approval.
+  agent: incident_commander
+  inputs:
+    - soc_findings
+    - malware_findings
+    - forensic_findings
